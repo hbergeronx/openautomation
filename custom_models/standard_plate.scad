@@ -3,6 +3,7 @@ width = 90;
 thickness = 6.3;
 
 small_radius=2.55;
+<<<<<<< HEAD
 large_radius=3.6;
 
 mirror ([0,1,0]) // the technical drawing for this part is oriented in this fashion
@@ -123,3 +124,47 @@ mirror ([0,1,0]) // the technical drawing for this part is oriented in this fash
 			cylinder(h=thickness, r=large_radius, center=false);	
 	}
 }
+=======
+
+
+difference(){
+	
+	cube(size = [width,length,thickness], center =false);
+	
+
+	//wheel	
+		translate(v=[12.7,150,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+	//wheel, part of sub plate
+		translate(v=[12.7,80,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+	//wheel, part of sub plate
+		translate(v=[12.7,47.7,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+	//wheel
+		translate(v=[12.7,10,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+
+		translate(v=[45,47.7,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+	//wheel
+		translate(v=[77.3,130,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+	
+		translate(v=[77.3,90,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+
+		translate(v=[77.3,70,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+
+		translate(v=[77.3,47.7,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+
+	//wheel
+		translate(v=[77.3,30,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+
+		translate(v=[77.3,10,0])
+		cylinder(h=thickness, r=small_radius, center=false);
+}
+>>>>>>> 06f5eb687fd926a2eed2f91b7a4264d45fe2df14
