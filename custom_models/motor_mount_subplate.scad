@@ -60,11 +60,5 @@ difference(){
 
 		translate(v=[123.43,32,0])
 		cylinder(h=thickness, r=large_radius, center=false);
-
-
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 06f5eb687fd926a2eed2f91b7a4264d45fe2df14
+
